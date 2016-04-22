@@ -1,16 +1,18 @@
-<ion-view view-title="Chats">
+<!--This page is where we ask the user to input what they want to add to the to do list.-->
+<ion-view view-title="Add to list">
   <ion-content>
-    <ion-list>
-      <ion-item class="item-remove-animate item-avatar item-icon-right" ng-repeat="chat in chats" type="item-text-wrap" href="#/tab/chats/{{chat.id}}">
-        <img ng-src="{{chat.face}}">
-        <h2>{{chat.name}}</h2>
-        <p>{{chat.lastText}}</p>
-        <i class="icon ion-chevron-right icon-accessory"></i>
-
-        <ion-option-button class="button-assertive" ng-click="remove(chat)">
-          Delete
-        </ion-option-button>
-      </ion-item>
-    </ion-list>
+<!--This is where i decide what type of label and how to ask the user what they want to enter and then show them where to enter it -->
+    <div class="list">
+      <label class="item item-input item-stacked-label">
+        <span class="input-label">What would you like to add to you list?</span>
+        <input type="text" ng-model="newTask" placeholder="Enter here">
+      </label>
+    </div>
+<!-- This is the button i have chosen for the user to click to add the to do to the list-->
+    <button class="button  button-full button-large button-balanced" ng-click="addToDo(newTask)">
+  Add to list
+</button>
+    
   </ion-content>
 </ion-view>
+

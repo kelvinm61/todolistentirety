@@ -1,50 +1,29 @@
 angular.module('starter.services', [])
 
-.factory('Chats', function() {
-  // Might use a resource here that returns a JSON array
 
-  // Some fake testing data
-  var chats = [{
-    id: 0,
-    name: 'Ben Sparrow',
-    lastText: 'You on your way?',
-    face: 'img/ben.png'
-  }, {
-    id: 1,
-    name: 'Max Lynx',
-    lastText: 'Hey, it\'s me',
-    face: 'img/max.png'
-  }, {
-    id: 2,
-    name: 'Adam Bradleyson',
-    lastText: 'I should buy a boat',
-    face: 'img/adam.jpg'
-  }, {
-    id: 3,
-    name: 'Perry Governor',
-    lastText: 'Look at my mukluks!',
-    face: 'img/perry.png'
-  }, {
-    id: 4,
-    name: 'Mike Harrington',
-    lastText: 'This is wicked good ice cream.',
-    face: 'img/mike.png'
-  }];
-
-  return {
-    all: function() {
-      return chats;
-    },
-    remove: function(chat) {
-      chats.splice(chats.indexOf(chat), 1);
-    },
-    get: function(chatId) {
-      for (var i = 0; i < chats.length; i++) {
-        if (chats[i].id === parseInt(chatId)) {
-          return chats[i];
-        }
-      }
-      return null;
+// this is where the todos will be saved when dated and saved
+.factory('ToDo', function()
+{
+  var data = { //these are just demo to dos so its not blank when the user opens the app.
+      detail: 
+          [
+      {title: "book hotel", added: new Date()}
+             
+      , {title: "pick up dry cleaning ", added: new Date()}
+      , {title: "record tv", added: new Date()}
+          ]
+      };
+  //this is how the todo is added to the file along ith the current date and time
+  function addToDo(title) 
+    {
+    data.detail.push({title: title, added: new Date()});
+        console.log(data.detail)
     }
+  // this is where the to do will be returned(added) to the list
+  return{
+    data: data
+    , addToDo: addToDo
   };
+   task.deletetask.splice(task.indexOf(deletetask), 1)
+     
 });

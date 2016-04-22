@@ -17,43 +17,53 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
 .config(function($stateProvider, $urlRouterProvider) {
 
   $stateProvider
-
-    .state('tab', {
+//this is where we give the tabs url 
+    .state('tab', 
+  {
     url: '/tab',
     abstract: true,
     templateUrl: 'templates/tabs.html'
   })
 
-
-  .state('tab.one', {
+//this is tab ones url and controller
+  .state('tab.one', 
+   {
     url: '/one',
-    views: {
-      'tab-one': {
+    views: 
+      {
+      'tab-one': 
+          {
         templateUrl: 'templates/tab-one.html',
         controller: 'oneCtrl'
-      }
-    }
-  })
-
-  .state('tab.two', {
-      url: '/two',
-      views: {
-        'tab-two': {
-          templateUrl: 'templates/tab-two.html',
-          controller: 'twoCtrl'
-        }
+          }
       }
     })
-  
-  .state('tab.three', {
+//this is tab twos url and controller
+  .state('tab.two', 
+     {
+      url: '/two',
+      views: 
+      {
+        'tab-two': 
+          {
+          templateUrl: 'templates/tab-two.html',
+          controller: 'twoCtrl'
+          }
+      }
+    })
+  //this is threes url and controller
+  .state('tab.three', 
+    {
     url: '/three',
-    views: {
-      'tab-three': {
+    views: 
+      {
+      'tab-three': 
+          {
         templateUrl: 'templates/tab-three.html',
         controller: 'threeCtrl'
-      }
-    }
-  });
+          }
+     }
+   });
 
   // if none of the above states are matched, use this as the fallback
   $urlRouterProvider.otherwise('/tab/one');
