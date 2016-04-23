@@ -1,11 +1,11 @@
 <!-- this is where the item will show up on the app with the date and time-->
 <ion-view view-title="To Do">
   <ion-content>
-              
+
             <ion-list show-delete="shouldShowDelete">
   <ion-item>
       <!--- delete button to show up--->
-        <ion-item ng-repeat="todo in data.detail">
+        <ion-item ng-repeat="todo in data.detail" >
         <h3>{{ todo.title }}</h3>
         <h4>{{ todo.added | date: 'yyyy-MM-dd HH:mm' }}</h4>
     <ion-delete-button class="ion-minus-circled" ng-click="removeItem(todo.title)"></ion-delete-button>

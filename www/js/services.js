@@ -17,8 +17,13 @@ angular.module('starter.services', [])
     {
       // this line will show this function is wired up correcty
       console.log('removing:' + title);
-        //this line will delete the the task
-     
+        //this line will delete the the task(made loads of attempts but i just could not fugure it out)
+        
+    //  var removeItem = detail.push(function(item) { return item.title; })
+    //                .indexOf(title);
+    //removeItem && detail.splice(removeIndex, 1);
+    // (title).splice(i, 1);
+    // title.splice(title, 1);
     //   title.todo.splice(title.indexOf(todo), 1);
     };
   //this is how the todo is added to the file along ith the current date and time
