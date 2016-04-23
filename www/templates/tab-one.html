@@ -15,7 +15,7 @@
         <ion-item ng-repeat="todo in data.detail">
         <h3>{{ todo.title }}</h3>
         <h4>{{ todo.added | date: 'yyyy-MM-dd HH:mm' }}</h4>
-    <ion-delete-button class="ion-minus-circled" ng-click="task(null)"></ion-delete-button>
+    <ion-delete-button class="ion-minus-circled" ng-click="removeItem(todo.title)"></ion-delete-button>
    
   </ion-item>
 </ion-list>
