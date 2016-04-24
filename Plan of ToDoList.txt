@@ -2,7 +2,7 @@ Plan of Mobile App development project April 2016
 Kelvin Murphy     
 G00311695
 
-note: i was committing files on github on the www folder without realising i needed to upload the entire todolist folder so my progress on the coding is in my repository to-do-list, i was over halfway through the coding when i realised this and then made a new repository called todolist entirety and there i committed everything including the folder.
+note: i was committing files on github on the www folder without realising i needed to upload the entire todolist folder so my progress on the coding is in my repository to-do-list, i was over halfway through the coding when i realised this and then made a new repository called todolist entirety and there i committed everything including the folder. Also when i was compiling into an andoid app in terminal it wouldnt let me use marshmallow 23 it would only use the default 22, so then i downloaded the platfrom 22 in the adroid studio and then realised i had to update ionic that thats where the problem was, so i updated ionic and it kept giving me problems giving errors and eventually i think it updated but I did not uninstall adroid 22 so i have android 22 and 23 instsalled so im not sure which version the app compliled in. Sorry about this.
 
 To-Do List
 three tabs
