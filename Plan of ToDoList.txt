@@ -1,0 +1,21 @@
+Plan of Mobile App development project April 2016
+Kelvin Murphy     
+G00311695
+
+note: i was committing files on github on the www folder without realising i needed to upload the entire todolist folder so my progress on the coding is in my repository to-do-list, i was over halfway through the coding when i realised this and then made a new repository called todolist entirety and there i committed everything including the folder.
+
+To-Do List
+three tabs
+-one tab for list
+-second tab for user to add to list
+-third tab as a handy reminder of most common things forgotten
+
+First tab will display the lists on the app using list command along with live date and time setting that up as well. i will put in two or three at the start so it won't look empty.
+
+Second tab will be Add to list tab, take user input by prompting them to enter details of their to do and by clicking the button the details will be pushed into the first tab with date and time.
+
+third tab will just be a big list of using list functions to lay out a help list of things people often forget.
+
+The app will be simple but easy on the eye and effective by using three tabs, swapping between them by the three buttons on the bottom of the page, and this is how they will navigate between the three tabs by simply clicking these buttons.
+
+
